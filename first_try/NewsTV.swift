@@ -10,6 +10,8 @@ import UIKit
 
 class NewsTV: UITableView {
 
+    
+    
     /*
     // Only override draw() if you perform custom drawing.
     // An empty implementation adversely affects performance during animation.

@@ -10,6 +10,9 @@ import UIKit
 
 class RegisterCell: UITableViewCell {
 
+    @IBOutlet weak var ActivityNameLabel: UILabel!
+    @IBOutlet weak var StartTimeLabel: UILabel!
+    @IBOutlet weak var LengthLabel: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

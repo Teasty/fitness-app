@@ -10,8 +10,8 @@ import UIKit
 
 class ActivityCell: UITableViewCell {
 
-    @IBOutlet weak var StartTimeLabel: UILabel!
     @IBOutlet weak var ActivityNameLabel: UILabel!
+    @IBOutlet weak var StartTimeLabel: UILabel!
     @IBOutlet weak var LengthLabel: UILabel!
     @IBOutlet weak var PaidImage: UIImageView!
     @IBOutlet weak var SignUpImage: UIImageView!
