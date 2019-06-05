@@ -26,6 +26,8 @@
 		A9E6BD34225BB4A3005969C7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9E6BD32225BB4A3005969C7 /* Main.storyboard */; };
 		A9E6BD36225BB4A4005969C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9E6BD35225BB4A4005969C7 /* Assets.xcassets */; };
 		A9E6BD39225BB4A4005969C7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9E6BD37225BB4A4005969C7 /* LaunchScreen.storyboard */; };
+		A9FA9E5D229FD14300B8BE91 /* SingUpTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FA9E5C229FD14300B8BE91 /* SingUpTVC.swift */; };
+		A9FA9E5F22A0463400B8BE91 /* RefreshTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FA9E5E22A0463400B8BE91 /* RefreshTVC.swift */; };
 		A9FD1132229175D800330DF2 /* ActivityVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FD1131229175D800330DF2 /* ActivityVC.swift */; };
 /* End PBXBuildFile section */
 
@@ -51,6 +53,8 @@
 		A9E6BD35225BB4A4005969C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A9E6BD38225BB4A4005969C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A9E6BD3A225BB4A4005969C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A9FA9E5C229FD14300B8BE91 /* SingUpTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingUpTVC.swift; sourceTree = "<group>"; };
+		A9FA9E5E22A0463400B8BE91 /* RefreshTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefreshTVC.swift; sourceTree = "<group>"; };
 		A9FD1131229175D800330DF2 /* ActivityVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -75,6 +79,49 @@
 			path = PostCell;
 			sourceTree = "<group>";
 		};
+		A960E6F422A7D0A7008A3DAC /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				A925E2E6226E49CC002412B3 /* HelloVC.swift */,
+				A9E6BD30225BB4A3005969C7 /* LogInVC.swift */,
+				A9FA9E5E22A0463400B8BE91 /* RefreshTVC.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		A960E6F522A7D0C5008A3DAC /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				A925E2E8226F2E43002412B3 /* UserDefaults+helper.swift */,
+				A925E2EC2271ADC0002412B3 /* SettingsTVC.swift */,
+				A925E2EE227DA708002412B3 /* PersonalDataVC.swift */,
+				A925E2F02282D1B8002412B3 /* CardInfoVC.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		A960E6F622A7D0D7008A3DAC /* Schedule */ = {
+			isa = PBXGroup;
+			children = (
+				A925E2F22290070E002412B3 /* ActivityCell.swift */,
+				A925E2F422900804002412B3 /* ScheduleModels.swift */,
+				A925E2F622900E34002412B3 /* ScheduleVC.swift */,
+				A9FD1131229175D800330DF2 /* ActivityVC.swift */,
+			);
+			path = Schedule;
+			sourceTree = "<group>";
+		};
+		A960E6F722A7D0EE008A3DAC /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				A9023F33229AEC9500731F46 /* MainVC.swift */,
+				A9316561229B083D00074A19 /* RegisterCell.swift */,
+				A9316563229B252800074A19 /* PostVC.swift */,
+				A9FA9E5C229FD14300B8BE91 /* SingUpTVC.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
 		A9E6BD22225BB4A3005969C7 = {
 			isa = PBXGroup;
 			children = (
@@ -95,24 +142,15 @@
 			isa = PBXGroup;
 			children = (
 				A9E6BD2E225BB4A3005969C7 /* AppDelegate.swift */,
-				A9E6BD30225BB4A3005969C7 /* LogInVC.swift */,
+				A960E6F422A7D0A7008A3DAC /* Login */,
 				A9E6BD32225BB4A3005969C7 /* Main.storyboard */,
 				A9E6BD35225BB4A4005969C7 /* Assets.xcassets */,
 				A9E6BD37225BB4A4005969C7 /* LaunchScreen.storyboard */,
 				A9E6BD3A225BB4A4005969C7 /* Info.plist */,
-				A925E2E6226E49CC002412B3 /* HelloVC.swift */,
-				A925E2E8226F2E43002412B3 /* UserDefaults+helper.swift */,
-				A925E2EC2271ADC0002412B3 /* SettingsTVC.swift */,
-				A925E2EE227DA708002412B3 /* PersonalDataVC.swift */,
-				A925E2F02282D1B8002412B3 /* CardInfoVC.swift */,
-				A925E2F22290070E002412B3 /* ActivityCell.swift */,
-				A925E2F422900804002412B3 /* ScheduleModels.swift */,
-				A925E2F622900E34002412B3 /* ScheduleVC.swift */,
-				A9FD1131229175D800330DF2 /* ActivityVC.swift */,
+				A960E6F522A7D0C5008A3DAC /* Settings */,
+				A960E6F622A7D0D7008A3DAC /* Schedule */,
 				A9023F30229ACE2D00731F46 /* PostCell */,
-				A9023F33229AEC9500731F46 /* MainVC.swift */,
-				A9316561229B083D00074A19 /* RegisterCell.swift */,
-				A9316563229B252800074A19 /* PostVC.swift */,
+				A960E6F722A7D0EE008A3DAC /* Main */,
 			);
 			path = first_try;
 			sourceTree = "<group>";
@@ -200,9 +238,11 @@
 				A925E2F722900E34002412B3 /* ScheduleVC.swift in Sources */,
 				A9E6BD2F225BB4A3005969C7 /* AppDelegate.swift in Sources */,
 				A925E2E9226F2E43002412B3 /* UserDefaults+helper.swift in Sources */,
+				A9FA9E5D229FD14300B8BE91 /* SingUpTVC.swift in Sources */,
 				A9FD1132229175D800330DF2 /* ActivityVC.swift in Sources */,
 				A925E2E7226E49CC002412B3 /* HelloVC.swift in Sources */,
 				A925E2ED2271ADC0002412B3 /* SettingsTVC.swift in Sources */,
+				A9FA9E5F22A0463400B8BE91 /* RefreshTVC.swift in Sources */,
 				A9023F2E229ACE2200731F46 /* PostCell.swift in Sources */,
 				A9023F34229AEC9500731F46 /* MainVC.swift in Sources */,
 			);

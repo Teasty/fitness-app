@@ -32,7 +32,7 @@ class LogInVC: UIViewController {
             case client_birth_date = "birth_date"
         }
     }
-
+    @IBOutlet weak var RefreshButton: UIButton!
     @IBOutlet weak var textbox: UITextField!
     @IBOutlet weak var deniedlabel: UILabel!
     @IBOutlet weak var loginButton: UIButton!
@@ -97,6 +97,7 @@ class LogInVC: UIViewController {
         }else{
             textbox.isHidden = false
             loginButton.isHidden = false
+            RefreshButton.isHidden = false
         }
     }
     

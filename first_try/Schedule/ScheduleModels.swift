@@ -17,7 +17,7 @@ class Activity: Codable {
     let activity_type_name: String
     let activity_type_description: String
     let activity_type_lenth: String
-    let activity_is_payed: String
+    let activity_is_paid: String
     let activity_mustbesigned: String
     let trainer_name: String
     let trainer_familia: String
@@ -54,5 +54,11 @@ class Register: Codable{
     let start_date_time: String
     let activity_type_lenth: String
     let time: String
-    
+}
+
+class Trainer: Codable{
+    let trainer_id: String
+    let trainer_name: String
+    let trainer_familia: String
+    let trainer_otchestvo: String
 }

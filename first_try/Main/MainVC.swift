@@ -67,7 +67,6 @@ class MainVC: UIViewController {
                 let decoder = JSONDecoder()
                 let activities = try decoder.decode([Register].self, from: data)
                 self.activities = activities
-                print(self.activities)
                 DispatchQueue.main.async {
                     self.RegistersTable.reloadData()
                 }

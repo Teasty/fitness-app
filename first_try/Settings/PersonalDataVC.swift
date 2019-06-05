@@ -26,7 +26,7 @@ class PersonalDataVC: UIViewController, UITextFieldDelegate {
         }
     }
     
-    let datePicker = UIDatePicker()
+   
     
     @IBAction func updateBurron(_ sender: UIButton) {
         loadingIndicator.isHidden = false
@@ -72,8 +72,7 @@ class PersonalDataVC: UIViewController, UITextFieldDelegate {
         emailTF.text = UserDefaults.standard.string(forKey: "user_email")!
         TelephoneTF.text = UserDefaults.standard.string(forKey: "user_telephone")!
         BirthDateLabel.text = UserDefaults.standard.string(forKey: "user_birth_date")!
-//        DateTF.inputView = datePicker
-//        datePicker.datePickerMode = .date
+//        
         
         let numToolBar = UIToolbar()
 //        let toolbar = UIToolbar()

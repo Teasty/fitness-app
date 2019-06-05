@@ -110,7 +110,7 @@ class ActivityVC: UIViewController {
         dateFormatter.dateFormat = "yyyy-MM-dd-HH-mm-ss"
         let new_start_time = dateFormatter.string(from: result!)
         print(new_start_time)
-        let interval:TimeInterval = 45*60
+        let interval:TimeInterval = Double(length)!*60
         let end_time = Date(timeInterval: interval, since: result!)
         let new_end_time = dateFormatter.string(from: end_time)
         return [new_start_time, new_end_time]

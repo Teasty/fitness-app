@@ -114,7 +114,7 @@ class ScheduleVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
             destinationVC.trainerName = activity.trainer_familia + " " + activity.trainer_name + " " + activity.trainer_otchestvo
             destinationVC.trainerID = activity.trainer_id
             destinationVC.desc = activity.activity_type_description
-            if activity.activity_is_payed == "1"{
+            if activity.activity_is_paid == "1"{
                 destinationVC.isPaid = false
             } else {
                 destinationVC.isPaid = true
@@ -188,7 +188,7 @@ class ScheduleVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
                 let endIndex = self.schedule[c].days_of_week.MON.activities[indexPath.row].start_time.index(self.schedule[c].days_of_week.MON.activities[indexPath.row].start_time.endIndex, offsetBy: -3)
                 cell.StartTimeLabel.text = self.schedule[c].days_of_week.MON.activities[indexPath.row].start_time.substring(to: endIndex)
                 cell.LengthLabel.text = self.schedule[c].days_of_week.MON.activities[indexPath.row].activity_type_lenth + " мин"
-                if self.schedule[c].days_of_week.MON.activities[indexPath.row].activity_is_payed == "1"{
+                if self.schedule[c].days_of_week.MON.activities[indexPath.row].activity_is_paid == "1"{
                     cell.PaidImage.isHidden = false
                 } else {
                     cell.PaidImage.isHidden = true
@@ -203,7 +203,7 @@ class ScheduleVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
                 let endIndex = self.schedule[c].days_of_week.TUE.activities[indexPath.row].start_time.index(self.schedule[c].days_of_week.TUE.activities[indexPath.row].start_time.endIndex, offsetBy: -3)
                 cell.StartTimeLabel.text = self.schedule[c].days_of_week.TUE.activities[indexPath.row].start_time.substring(to: endIndex)
                 cell.LengthLabel.text = self.schedule[c].days_of_week.TUE.activities[indexPath.row].activity_type_lenth + " мин"
-                if self.schedule[c].days_of_week.TUE.activities[indexPath.row].activity_is_payed == "1"{
+                if self.schedule[c].days_of_week.TUE.activities[indexPath.row].activity_is_paid == "1"{
                     cell.PaidImage.isHidden = false
                 } else {
                     cell.PaidImage.isHidden = true
@@ -218,7 +218,7 @@ class ScheduleVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
                 let endIndex = self.schedule[c].days_of_week.WED.activities[indexPath.row].start_time.index(self.schedule[c].days_of_week.WED.activities[indexPath.row].start_time.endIndex, offsetBy: -3)
                 cell.StartTimeLabel.text = self.schedule[c].days_of_week.WED.activities[indexPath.row].start_time.substring(to: endIndex)
                 cell.LengthLabel.text = self.schedule[c].days_of_week.WED.activities[indexPath.row].activity_type_lenth + " мин"
-                if self.schedule[c].days_of_week.WED.activities[indexPath.row].activity_is_payed == "1"{
+                if self.schedule[c].days_of_week.WED.activities[indexPath.row].activity_is_paid == "1"{
                     cell.PaidImage.isHidden = false
                 } else {
                     cell.PaidImage.isHidden = true
@@ -233,7 +233,7 @@ class ScheduleVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
                 let endIndex = self.schedule[c].days_of_week.THU.activities[indexPath.row].start_time.index(self.schedule[c].days_of_week.THU.activities[indexPath.row].start_time.endIndex, offsetBy: -3)
                 cell.StartTimeLabel.text = self.schedule[c].days_of_week.THU.activities[indexPath.row].start_time.substring(to: endIndex)
                 cell.LengthLabel.text = self.schedule[c].days_of_week.THU.activities[indexPath.row].activity_type_lenth + " мин"
-                if self.schedule[c].days_of_week.THU.activities[indexPath.row].activity_is_payed == "1"{
+                if self.schedule[c].days_of_week.THU.activities[indexPath.row].activity_is_paid == "1"{
                     cell.PaidImage.isHidden = false
                 } else {
                     cell.PaidImage.isHidden = true
@@ -248,7 +248,7 @@ class ScheduleVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
                 let endIndex = self.schedule[c].days_of_week.FRI.activities[indexPath.row].start_time.index(self.schedule[c].days_of_week.FRI.activities[indexPath.row].start_time.endIndex, offsetBy: -3)
                 cell.StartTimeLabel.text = self.schedule[c].days_of_week.FRI.activities[indexPath.row].start_time.substring(to: endIndex)
                 cell.LengthLabel.text = self.schedule[c].days_of_week.FRI.activities[indexPath.row].activity_type_lenth + " мин"
-                if self.schedule[c].days_of_week.FRI.activities[indexPath.row].activity_is_payed == "1"{
+                if self.schedule[c].days_of_week.FRI.activities[indexPath.row].activity_is_paid == "1"{
                     cell.PaidImage.isHidden = false
                 } else {
                     cell.PaidImage.isHidden = true
@@ -263,7 +263,7 @@ class ScheduleVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
                 let endIndex = self.schedule[c].days_of_week.SAT.activities[indexPath.row].start_time.index(self.schedule[c].days_of_week.SAT.activities[indexPath.row].start_time.endIndex, offsetBy: -3)
                 cell.StartTimeLabel.text = self.schedule[c].days_of_week.SAT.activities[indexPath.row].start_time.substring(to: endIndex)
                 cell.LengthLabel.text = self.schedule[c].days_of_week.SAT.activities[indexPath.row].activity_type_lenth + " мин"
-                if self.schedule[c].days_of_week.SAT.activities[indexPath.row].activity_is_payed == "1"{
+                if self.schedule[c].days_of_week.SAT.activities[indexPath.row].activity_is_paid == "1"{
                     cell.PaidImage.isHidden = false
                 } else {
                     cell.PaidImage.isHidden = true
@@ -278,7 +278,7 @@ class ScheduleVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
                 let endIndex = self.schedule[c].days_of_week.SUN.activities[indexPath.row].start_time.index(self.schedule[c].days_of_week.SUN.activities[indexPath.row].start_time.endIndex, offsetBy: -3)
                 cell.StartTimeLabel.text = self.schedule[c].days_of_week.SUN.activities[indexPath.row].start_time.substring(to: endIndex)
                 cell.LengthLabel.text = self.schedule[c].days_of_week.SUN.activities[indexPath.row].activity_type_lenth + " мин"
-                if self.schedule[c].days_of_week.SUN.activities[indexPath.row].activity_is_payed == "1"{
+                if self.schedule[c].days_of_week.SUN.activities[indexPath.row].activity_is_paid == "1"{
                     cell.PaidImage.isHidden = false
                 } else {
                     cell.PaidImage.isHidden = true
@@ -294,7 +294,7 @@ class ScheduleVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
                     let endIndex = self.schedule[c].days_of_week.MON.activities[indexPath.row].start_time.index(self.schedule[c].days_of_week.MON.activities[indexPath.row].start_time.endIndex, offsetBy: -3)
                     cell.StartTimeLabel.text = self.schedule[c].days_of_week.MON.activities[indexPath.row].start_time.substring(to: endIndex)
                     cell.LengthLabel.text = self.schedule[c].days_of_week.MON.activities[indexPath.row].activity_type_lenth + " мин"
-                    if self.schedule[c].days_of_week.MON.activities[indexPath.row].activity_is_payed == "1"{
+                    if self.schedule[c].days_of_week.MON.activities[indexPath.row].activity_is_paid == "1"{
                         cell.PaidImage.isHidden = false
                     } else {
                         cell.PaidImage.isHidden = true
