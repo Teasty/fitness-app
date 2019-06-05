@@ -39,7 +39,7 @@
 
 ![Settings page](https://github.com/Teasty/fitness-app/blob/master/screenshots/lZ10MZ3ZBlc.jpg?raw=true)
 
- Экран настроек - это **UITableViewControllet**  со статическими ячейками. 
+Экран настроек - это **UITableViewControllet**  со статическими ячейками. 
  * Изменение персональных данных:
   После входа пользователя в приложение, все его персональные данные хранятся в **UserDefaults**, после регестрации пользователь может менять телефон и e-mail. При их изменении они меняются и в **UserDefaults**, и в базе данных.
  * Информация об обонементе:
