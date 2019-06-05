@@ -22,10 +22,11 @@
 
 * Экран с расписанием занятий в фитнесс-клубе:
 
-![Schedule page](https://github.com/Teasty/fitness-app/blob/master/screenshots/Ts-YWQ3Wzeo.jpg?raw=true)\
+![Schedule page](https://github.com/Teasty/fitness-app/blob/master/screenshots/Ts-YWQ3Wzeo.jpg?raw=true)
+
 Это **UITableViewControllet**, где переключая **UISegmentedControl** можно выбрать, расписание какого зала пользователь хочет увидеть. Значки напротив названия обозначают, какие занятия платные и на какие необходима предварительная запись. При выборе определенного заняти пользователь переходит на окно с описанием этого занятия, а также может записаться на то, где необходима предварительная запись:
 
-![Schedule page](https://github.com/Teasty/fitness-app/blob/master/screenshots/CjfdDwXLMFE.jpg?raw=true)\
+![Schedule page](https://github.com/Teasty/fitness-app/blob/master/screenshots/CjfdDwXLMFE.jpg?raw=true)
  
 
 * Экран записи на индивидуальное занятие:
@@ -34,8 +35,10 @@
   
   **UITableViewControllet**  со статическими ячейками. Поле выбора инструктора - **UIPickerView**, информация в который загружается из базы данных. Поле выбора даты - **UIDatePicker**. Поле выбора времени - **UIPickerView**, оно становится активным только после выбора инструктора и даты, так как выводится только то время, когда у инструктора нет занятий ни по расписанию, ни по записям.
   
-* Экран настроек:\ 
-![Settings page](https://github.com/Teasty/fitness-app/blob/master/screenshots/lZ10MZ3ZBlc.jpg?raw=true)\
+* Экран настроек:
+
+![Settings page](https://github.com/Teasty/fitness-app/blob/master/screenshots/lZ10MZ3ZBlc.jpg?raw=true)
+
 Экран настроек - это **UITableViewControllet**  со статическими ячейками. 
  * Изменение персональных данных:
   После входа пользователя в приложение, все его персональные данные хранятся в **UserDefaults**, после регестрации пользователь может менять телефон и e-mail. При их изменении они меняются и в **UserDefaults**, и в базе данных.
